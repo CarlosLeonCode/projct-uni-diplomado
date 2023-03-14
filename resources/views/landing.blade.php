@@ -156,6 +156,22 @@
     </div>
   </section>
 
+  <!-- Sobre nosotros -->
+  <section id="aboutUs">
+    <div class="container">
+      <div class="section-title mt-5">
+        <h2>Sobre nosotros</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus commodi, cum, totam consectetur hic illo alias facilis repudiandae soluta aut exercitationem vel omnis rerum quaerat sit optio culpa fugiat? Quas.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus commodi, cum, totam consectetur hic illo alias facilis repudiandae soluta aut exercitationem vel omnis rerum quaerat sit optio culpa fugiat? Quas.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus commodi, cum, totam consectetur hic illo alias facilis repudiandae soluta aut exercitationem vel omnis rerum quaerat sit optio culpa fugiat? Quas.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus commodi, cum, totam consectetur hic illo alias facilis repudiandae soluta aut exercitationem vel omnis rerum quaerat sit optio culpa fugiat? Quas.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus commodi, cum, totam consectetur hic illo alias facilis repudiandae soluta aut exercitationem vel omnis rerum quaerat sit optio culpa fugiat? Quas.
+        </p>
+      </div>
+    </div>
+  </section>
+
   <!-- Mapa de contacto-->
   <section id="contacto" class="contacto section-bg">
     <div class="container">
