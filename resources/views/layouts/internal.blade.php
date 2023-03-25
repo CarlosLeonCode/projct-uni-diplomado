@@ -18,7 +18,7 @@
 </head>
 <body>
   <div>
-    <nav class="navbar bg-primary navbar-expand-lg bg-body-tertiary p-2">
+    <nav class="navbar bg-primary navbar-expand-lg bg-body-tertiary p-2 bg-dark internal-nav">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">OMC</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,31 +26,37 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarScroll">
           <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
+            <!-- Cylinders -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Link
+                Cylinders
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="{{ route('cylinders.index') }}">List</a></li>
+                <li><a class="dropdown-item" href="{{ route('cylinders.create') }}">Create</a></li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Link</a>
+            <!-- Schedules -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Schedules
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="{{ route('schedules.index') }}">List</a></li>
+                <li><a class="dropdown-item" href="{{ route('schedules.create') }}">Create</a></li>
+              </ul>
+            </li>
+            <!-- Maintances -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Maintances
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="{{ route('maintances.index') }}">List</a></li>
+                <li><a class="dropdown-item" href="{{ route('maintances.create') }}">Create</a></li>
+              </ul>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
         </div>
       </div>
     </nav>
