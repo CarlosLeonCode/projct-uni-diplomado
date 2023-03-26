@@ -13,13 +13,12 @@
             @includeif('partials.errors')
             <div class="card card-default w-50 shadow border-0">
               <div class="card-header border-0 p-3">
-                  <span class="card-title">{{ __('Update') }} Cylinder</span>
+                <span class="card-title">{{ __('Update') }} Cylinder</span>
               </div>
               <div class="card-body">
                 <form method="POST" action="{{ route('cylinders.update', $cylinder->id) }}"  role="form" enctype="multipart/form-data" class="needs-validation">
                   {{ method_field('PATCH') }}
                   @csrf
-
                   @include('cylinder.form')
                 </form>
                 <div class="mt-3">
