@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap v5.1.3 CDNs -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../src/css/vistaUpdate.css">
+
+</head>
+
+<body>
+
+    <div class="actualizar">
+
+        <h1 class="text-center">Actualizar cilindro</h1>
+        
+        <form class="needs-validation">
+            <div class="mb-3 form-group was-validated">
+                <label class="form-label" for="tamanio">Tamaño del cilindro</label>
+                <input class="form-control" type="tamanio" id="tamanio" required>
+            </div>
+            <div class="mb-3 form-group was-validated">
+                <label class="form-label" for="lote">Lote del cilindro</label>
+                <input class="form-control" type="lote" id="lote" required>
+            </div>
+            <div class="mb-3">
+                <div class="row form-group">
+                    <label for="date" class="form-label">Fecha de creación</label>
+                    <div class="mb-3">
+                        <div class="input-group date" id="datepicker">
+                            <input type="text" class="form-control">
+                            <span class="input-group-append">
+                                <span class="input-group-text bg-white d-block">
+                                    <i class="fa fa-calendar"></i>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <script type="text/javascript">
+                    $(function() {
+                        $('#datepicker').datepicker();
+                    });
+                </script>
+
+            <select class=" col-5 form-select form-select mb-3" aria-label="estado" >
+                <option selected>Selecciona una opción</option>
+                <option value="Activo">Activo</option>
+                <option value="Inactivo">Inactivo</option>
+              </select>
+        </form>
+
+    </div>
+
+    
+
+</body>
+
+</html>
