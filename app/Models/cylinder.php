@@ -19,7 +19,6 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Cylinder extends Model
 {
-    
     static $rules = [
 		'size' => 'required',
 		'lote' => 'required',
@@ -34,7 +33,4 @@ class Cylinder extends Model
      * @var array
      */
     protected $fillable = ['size','lote','status'];
-
-
-
 }

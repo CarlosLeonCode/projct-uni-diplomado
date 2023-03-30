@@ -20,7 +20,6 @@ return new class extends Migration
             $table->string('maintance_type');
             $table->enum('status', array('pending', 'done'));
             $table->foreignId('cylinder_id')->references('id')->on('cylinders');
-            $table->foreignId('schedule_id')->references('id')->on('schedules');
             $table->timestamps();
         });
     }
