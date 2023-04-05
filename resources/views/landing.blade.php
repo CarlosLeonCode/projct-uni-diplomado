@@ -292,7 +292,7 @@
         &copy; Copyright <strong><span>OMC</span></strong>. Todos los derechos reservados
       </div>
       <div class="credits">
-        Diseñado por Shirley Bernal y Carlos Leon</a>
+        Proyecto - Diplomado Desarrollo Web
       </div>
     </div>
     <div class="social-links text-center text-md-right pt-3 pt-md-0">

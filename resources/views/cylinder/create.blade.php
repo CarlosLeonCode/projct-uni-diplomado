@@ -13,7 +13,7 @@
           @includeif('partials.errors')
           <div class="card card-default w-50 shadow border-0">
             <div class="card-header border-0 p-3">
-              <span class="card-title">{{ __('Create') }} Cylinder</span>
+              <span class="card-title">{{ __('Crear') }} Cilindro</span>
             </div>
             <div class="card-body">
               <form method="POST" action="{{ route('cylinders.store') }}"  role="form" enctype="multipart/form-data">
@@ -22,7 +22,7 @@
               </form>
               <div class="mt-3">
                 <a href="{{ route('cylinders.index') }}" class="btn btn-secondary float-right w-100"  data-placement="left">
-                  {{ __('Back') }}
+                  {{ __('Volver') }}
                 </a>
               </div>
             </div>
