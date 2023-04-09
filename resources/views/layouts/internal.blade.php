@@ -46,6 +46,10 @@
                 <li><a class="dropdown-item" href="{{ route('maintances.create') }}">Crear</a></li>
               </ul>
             </li>
+            <form action="{{ route('logout') }}" method="POST">
+              @csrf
+              <button class="btn nav-link scrollto">Cerrar sesión</button>
+            </form>
           </ul>
         </div>
       </div>
