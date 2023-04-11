@@ -48,7 +48,7 @@
                       <td>{{ $maintance->maintance_started_at }}</td>
                       <td>{{ $maintance->maintance_finished_at }}</td>
                       <td>{{ $maintance->maintance_type }}</td>
-                      <td>{{ $maintance->status }}</td>
+                      <td>{{ $maintance->status == 'pending' ? 'Pending' : 'Done' }}</td>
                       <td>{{ $maintance->cylinder_id }}</td>
                       <td>
                         <form action="{{ route('maintances.destroy',$maintance->id) }}" method="POST">

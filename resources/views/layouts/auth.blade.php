@@ -21,7 +21,9 @@
     <!-- Encabezado -->
     <header id="header" class="fixed-top">
       <div class="container d-flex align-items-center">
-        <h1 class="logo me-auto"><a href="/">OMC</a></h1>
+        <div class="logo me-auto">
+          <img src="{{URL::asset('img/logo.png')}}" class="d-block" style="width: 7rem; margin-right: 2rem;" alt="logo">
+        </div>
         <nav class="navbar navbar-expand-lg landing-nav">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

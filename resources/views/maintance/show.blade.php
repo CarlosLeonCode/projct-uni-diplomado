@@ -30,8 +30,8 @@
                 {{ $maintance->maintance_type }}
               </div>
               <div class="form-group m-2">
-                <strong>Tipo de Mantenimiento:</strong>
-                {{ $maintance->status }}
+                <strong>Estatus:</strong>
+                {{ $maintance->status == 'pending' ? 'Pending' : 'Done' }}
               </div>
               <div class="form-group m-2">
                 <strong>Cilindro ID:</strong>

@@ -12,7 +12,6 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
@@ -20,7 +19,9 @@
   <div>
     <nav class="navbar bg-primary navbar-expand-lg bg-body-tertiary p-2 bg-dark internal-nav">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">OMC</a>
+        <div class="logo me-auto">
+          <img src="{{URL::asset('img/logo.png')}}" class="d-block" style="width: 7rem; margin-right: 2rem;" alt="logo">
+        </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Maintance;
+use App\Models\Cylinder;
 use Illuminate\Http\Request;
 
 /**
@@ -32,7 +33,8 @@ class MaintanceController extends Controller
     public function create()
     {
         $maintance = new Maintance();
-        return view('maintance.create', compact('maintance'));
+        $cylinders = Cylinder::All();
+        return view('maintance.create', compact('maintance', 'cylinders'));
     }
 
     /**
@@ -73,8 +75,9 @@ class MaintanceController extends Controller
     public function edit($id)
     {
         $maintance = Maintance::find($id);
-
-        return view('maintance.edit', compact('maintance'));
+        $cylinder_id = $maintance->cylinder_id;
+        $cylinders = Cylinder::where('id', $cylinder_id)->get();
+        return view('maintance.edit', compact('maintance', 'cylinders'));
     }
 
     /**
