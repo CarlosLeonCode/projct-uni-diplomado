@@ -13,25 +13,22 @@ use Illuminate\Database\Eloquent\Model;
  * @property $maintance_type
  * @property $status
  * @property $cylinder_id
- * @property $schedule_id
  * @property $created_at
  * @property $updated_at
  *
  * @property Cylinder $cylinder
- * @property Schedule $schedule
  * @package App
  * @mixin \Illuminate\Database\Eloquent\Builder
  */
 class Maintance extends Model
 {
-    
+
     static $rules = [
 		'maintance_started_at' => 'required',
 		'maintance_finished_at' => 'required',
 		'maintance_type' => 'required',
 		'status' => 'required',
 		'cylinder_id' => 'required',
-		'schedule_id' => 'required',
     ];
 
     protected $perPage = 20;
@@ -51,7 +48,7 @@ class Maintance extends Model
     {
         return $this->hasOne('App\Models\Cylinder', 'id', 'cylinder_id');
     }
-    
+
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasOne
      */
@@ -59,6 +56,5 @@ class Maintance extends Model
     {
         return $this->hasOne('App\Models\Schedule', 'id', 'schedule_id');
     }
-    
 
 }

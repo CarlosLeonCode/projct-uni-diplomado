@@ -2,7 +2,7 @@
 
 @section('content')
 <!--Carrusel de imagenes-->
-<section id="inicio" class="d-flex align-items-center">
+<section id="inicio" class="d-flex align-items-center" data-aos="fade-up">
   <div class="container">
     <div class="section-title">
       <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -51,14 +51,14 @@
 <section id="servicios" class="services section-bg">
   <div class="container">
 
-    <div class="section-title">
+    <div class="section-title" data-aos="fade-right">
       <h2>Servicios</h2>
       <p>Somos expertos en la comercialización y distribución de medidores inteligentes de energía.</p>
     </div>
 
     <div class="row">
       <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-        <div class="icon-box">
+        <div class="icon-box" data-aos="zoom-in">
           <div class="icon"><i class="fa-solid fa-truck"></i></div>
           <h4><a href="">Envios</a></h4>
           <p>Enviamos cilindros de gas a los hospitales y casas en Bogotá</p>
@@ -66,7 +66,7 @@
       </div>
 
       <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-        <div class="icon-box">
+        <div class="icon-box" data-aos="zoom-in">
           <div class="icon"><i class="fa-solid fa-clipboard-check"></i></div>
           <h4><a href="">Mantenimiento</a></h4>
           <p>Instrumentos de cilindros de gas para todo tipo de sectores.</p>
@@ -74,7 +74,7 @@
       </div>
 
       <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-        <div class="icon-box">
+        <div class="icon-box" data-aos="zoom-in">
           <div class="icon"><i class="fa-solid fa-headphones"></i></div>
           <h4><a href="">Soporte</a></h4>
           <p>Nuestro equipo de soporte técnico estará a su disposición siempre que lo necesite. </p>
@@ -87,7 +87,7 @@
 <section id="galeria" class="gallery">
   <div class="container">
 
-    <div class="section-title">
+    <div class="section-title" data-aos="fade-left">
       <h2>Galería</h2>
     </div>
   </div>
@@ -96,7 +96,7 @@
     <div class="row g-0">
 
       <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
+        <div class="gallery-item" data-aos="zoom-in-down">
           <a href="../Estilos/img/gallery/gallery-1.jpg" class="galelry-lightbox">
             <img src="{{URL::asset('img/Galeria1.jpg')}}" style="width: 600px; height: 330px ;" alt=""
               class="img-fluid">
@@ -105,7 +105,7 @@
       </div>
 
       <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
+        <div class="gallery-item" data-aos="zoom-in-down">
           <a href="../Estilos/img/gallery/gallery-2.jpg" class="galelry-lightbox">
             <img src="{{URL::asset('img/Galeria2.jpg')}}" alt="" class="img-fluid">
           </a>
@@ -113,7 +113,7 @@
       </div>
 
       <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
+        <div class="gallery-item" data-aos="zoom-in-down">
           <a href="../Estilos/img/gallery/gallery-3.jpg" class="galelry-lightbox">
             <img src="{{URL::asset('img/Galeria3.jpg')}}" style="width: 600px; height: 330px ;" alt=""
               class="img-fluid">
@@ -122,7 +122,7 @@
       </div>
 
       <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
+        <div class="gallery-item" data-aos="zoom-in-down">
           <a href="../estilos/img/gallery/gallery-4.jpg" class="galelry-lightbox">
             <img src="{{URL::asset('img/Galeria4.jpg')}}" style="width: 600px; height: 330px ;" alt=""
               class="img-fluid">
@@ -131,7 +131,7 @@
       </div>
 
       <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
+        <div class="gallery-item" data-aos="zoom-in-down">
           <a href="../estilos/img/gallery/gallery-5.jpg" class="galelry-lightbox">
             <img src="{{URL::asset('img/Galeria5.jpg')}}" style="width: 600px; height: 330px ;" alt=""
               class="img-fluid">
@@ -140,7 +140,7 @@
       </div>
 
       <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
+        <div class="gallery-item" data-aos="zoom-in-down">
           <a href="../estilos/img/gallery/gallery-6.jpg" class="galelry-lightbox">
             <img src="{{URL::asset('img/Galeria6.jpg')}}" style="width: 600px; height: 330px ;" alt=""
               class="img-fluid">
@@ -149,7 +149,7 @@
       </div>
 
       <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
+        <div class="gallery-item" data-aos="zoom-in-down">
           <a href="../estilos/img/gallery/gallery-7.jpg" class="galelry-lightbox">
             <img src="{{URL::asset('img/Galeria7.jpg')}}" style="width: 600px; height: 330px ;" alt=""
               class="img-fluid">
@@ -158,7 +158,7 @@
       </div>
 
       <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
+        <div class="gallery-item" data-aos="zoom-in-down">
           <a href="../estilos/img/gallery/gallery-8.jpg" class="galelry-lightbox">
             <img src="{{URL::asset('img/Galeria8.jpg')}}" style="width: 600px; height: 330px ;" alt=""
               class="img-fluid">
@@ -172,7 +172,7 @@
 <!-- Sobre nosotros -->
 <section id="aboutUs">
   <div class="container">
-    <div class="section-title mt-5">
+    <div class="section-title mt-5" data-aos="fade-right">
       <h2>Sobre nosotros</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus commodi, cum, totam consectetur hic illo
@@ -191,41 +191,45 @@
 </section>
 
 <!-- Mapa de contacto-->
-<section id="contacto" class="contacto section-bg">
+<section id="contacto" class="contacto section-bg" data-aos="zoom-in-up">
   <div class="container px-5">
-    <div class="section-title">
-      <h2>Contacto</h2>
-      <form>
-        <div class="mb-3 form-check d-flex">
-          <label for="nameField" class="form-label mx-2">Nombre</label>
-          <input type="text" class="form-control" id="nameField" aria-describedby="nameHelp">
-        </div>
-        <div class="mb-3 form-check d-flex">
-          <label for="lastnamesField" class="form-label mx-2">Apellidos</label>
-          <input type="text" class="form-control" id="lastnamesField" aria-describedby="nameHelp">
-        </div>
-        <div class="mb-3 form-check d-flex">
-          <label for="phoneField" class="form-label mx-2">Teléfono</label>
-          <input type="text" class="form-control" id="phoneField" aria-describedby="nameHelp">
-        </div>
-        <div class="mb-3 form-check d-flex">
-          <label for="phoneField" class="form-label mx-2">Género</label>
-          <input type="text" class="form-control" id="phoneField" aria-describedby="nameHelp">
-        </div>
-        <div class="mb-3 form-check d-flex">
-          <label for="emailField" class="form-label mx-2">Correo</label>
-          <input type="email" class="form-control" id="emailField" aria-describedby="nameHelp">
-        </div>
-        <div class="mb-3 form-check d-flex">
-          <select class="form-select" aria-label="Default select example">
-            <option selected>¿Cómo te enteraste de nosotros?</option>
-            <option value="1">Referido</option>
-            <option value="2">Redes sociales</option>
-            <option value="3">Buscador</option>
-          </select>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+    <div class="section-title row">
+      <div class="col-1 col-lg-3"></div>
+      <div class="col-10 col-lg-6">
+        <h2>Contacto</h2>
+        <form>
+          <div class="mb-3 form-check d-flex">
+            <label for="nameField" class="form-label mx-2">Nombre</label>
+            <input type="text" class="form-control" id="nameField" aria-describedby="nameHelp">
+          </div>
+          <div class="mb-3 form-check d-flex">
+            <label for="lastnamesField" class="form-label mx-2">Apellidos</label>
+            <input type="text" class="form-control" id="lastnamesField" aria-describedby="nameHelp">
+          </div>
+          <div class="mb-3 form-check d-flex">
+            <label for="phoneField" class="form-label mx-2">Teléfono</label>
+            <input type="text" class="form-control" id="phoneField" aria-describedby="nameHelp">
+          </div>
+          <div class="mb-3 form-check d-flex">
+            <label for="phoneField" class="form-label mx-2">Género</label>
+            <input type="text" class="form-control" id="phoneField" aria-describedby="nameHelp">
+          </div>
+          <div class="mb-3 form-check d-flex">
+            <label for="emailField" class="form-label mx-2">Correo</label>
+            <input type="email" class="form-control" id="emailField" aria-describedby="nameHelp">
+          </div>
+          <div class="mb-3 form-check d-flex">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>¿Cómo te enteraste de nosotros?</option>
+              <option value="1">Referido</option>
+              <option value="2">Redes sociales</option>
+              <option value="3">Buscador</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="col-1 col-md-3 col-lg-3"></div>
     </div>
   </div>
   </div>
@@ -239,7 +243,7 @@
 
 <!-- Pie de pagina -->
 <footer id="footer">
-  <div class="footer-top">
+  <div class="footer-top" data-aos="zoom-out">
     <div class="container">
       <div class="row">
 
@@ -292,7 +296,7 @@
         &copy; Copyright <strong><span>OMC</span></strong>. Todos los derechos reservados
       </div>
       <div class="credits">
-        Diseñado por Shirley Bernal y Carlos Leon</a>
+        Proyecto - Diplomado Desarrollo Web
       </div>
     </div>
     <div class="social-links text-center text-md-right pt-3 pt-md-0">
